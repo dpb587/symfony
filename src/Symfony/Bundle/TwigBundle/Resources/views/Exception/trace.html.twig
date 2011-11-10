@@ -20,3 +20,5 @@
         {{ trace.file|file_excerpt(trace.line) }}
     </div>
 {% endif %}
+
+<span class="trace-in{{ trace.file }}at{{ trace.line }}">{{ trace|json_encode }}</span>
